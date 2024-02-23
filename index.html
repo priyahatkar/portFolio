@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav class="mainNav fixed-top navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="##">
+            <img src="./../../../../assets/images/logo.png" alt="logo" title="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" [ngClass]="{'show': navbarOpen}" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+            <div class="social my-2 my-lg-0">
+                <ul class="brand-icons mb-0">
+                    <li class="socialBrand">
+                        <a class="socialBrands" href="#proSection">profile <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="socialBrand">
+                        <a class="socialBrands" href="#skillSection">skills</a>
+                    </li>
+                    <li class="socialBrand">
+                        <a href="#edSection" class="socialBrands">education</a>
+                    </li>
+                    <li class="socialBrand">
+                        <a href="#workSection" class="socialBrands">experience</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-section" id="proSection">
+        <div class="container profileSection">
+            <div class="profileSection">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="infoSection">
+                            <figure>
+                                <img src="./../../../../assets/images/user.png" alt="user" title="user">
+                            </figure>
+                        </div>
+                        <div class="infoDatas">
+                            <h1>Hello,</h1>
+                            <h1>My Name Is,</h1>
+                            <h1>Priya Anand Hatkar</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 info">
+                        <h3>Angular Developer</h3>
+                        <span></span> 
+                        <h3>Frontend Developer</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center mb-3">
+                        <app-social-icons></app-social-icons>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 d-flex justify-content-center">
+                        <a href="./../../../../assets/images/resume.pdf" class="resInfo" target="_blank" download>Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="skills-section">
+        <h1 class="skills" id="skillsSection">SKILL SET</h1>
+        <div class="skillSections">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2" id="skillSection">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="edSection">
+        <h1 class="skills"  id="edSection">WORK EXPERIENCE</h1> 
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-8 offset-md-2" id="edSections">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="workSection">
+        <h1 class="skills" id="workSection">WORK EXPERIENCE</h1> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="workInfos">
+                        <div class="workInfo">
+                            <h3>Angular Developer</h3>
+                            <h3>Feb 2023 to Present</h3>
+                        </div>
+                        <div class="workInfo">
+                            <h3>CSM Tech Corp India.</h3>
+                            <h3>Nizamabad, India</h3>
+                        </div>
+                        <div class="proDetail">
+                            <h4>Project :</h4>
+                            <h4>Innovators Electric</h4>
+                        </div>
+                        <div class="proDetail">
+                            <h4>Project:</h4>
+                            <p class="mx-2">Contributed in the development of the user interface for the Customer Enquiry module, ensuring a 
+                                seamless and user-friendly experience. The major products include electric wires and cables, electric motors, industrial 
+                                and street lighting, etc. It also helps customers get the best product with the best offer, allowing them to easily compare 
+                                product features and prices and choose the best one.</p>
+                        </div>
+                        <div class="resDetail ml-5">
+                            <h4 class="m-0">• Roles and Responsibility:</h4>
+                            <div class="paraInfo ml-5">
+                                <p>- Developed a various modules using Angular 10.</p>
+                            <p>- Created a reactive form for the customer enquiry service.</p>
+                            <p>- Used HTTP API module for data binding in application.</p>
+                            <p>- Implemented real-time data updates for the various products.</p>
+                            <p>- According to the client’s requirement, made necessary changes in the code without affecting the code.</p>
+                            <p>- Contributed ideas and suggestions in team meetings and delivered updates on deadlines, designs and 
+                                enhancements</p>
+                            <p>- We have received the positive feedback from the clients, leading to a 15% increase in user engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="workInfos">
+                        <div class="workInfo">
+                            <h3>Front-End Developer</h3>
+                            <h3>Dec 2021 to Feb 2023</h3>
+                        </div>
+                        <div class="workInfo">
+                            <h3>CSM Tech Corp India.</h3>
+                            <h3>Nizamabad, India</h3>
+                        </div>
+                        <div class="proDetail">
+                            <h4>Project :</h4>
+                            <h4>Business Autopilots</h4>
+                        </div>
+                        <div class="proDetail">
+                            <h4>Project:</h4>
+                            <p class="mx-2"> Worked with Business Autopilots which helped customer to develop their business and increase 
+                                customer base by providing various business strategies. Expert business development executive was involved to provide 
+                                business solution to the customer.</p>
+                        </div>
+                        <div class="resDetail ml-5">
+                            <h4 class="m-0">• Roles and Responsibility:</h4>
+                            <div class="paraInfo ml-5">
+                                <p>- Created the architectural high level and low-level design.</p>
+                            <p>- Collaborated with project managers to select ambitious, but realistic coding milestones on pre-release software 
+                                project development.</p>
+                            <p>- Coordinate with a team of UX and UI developers to build quality web-applications with cross-browser 
+                                compatibility.
+                                </p>
+                            <p>- Contributed ideas and suggestions in team meetings and delivered updates on deadlines, designs and 
+                                enhancements.
+                                </p>
+                            <p>- Used Fetch APIs for communication with backend and database and also created interactions using JavaScript.
+                            </p>
+                            <p>- Developed application for both desktop and mobile operating systems.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="workInfos">
+                        <div class="workInfo">
+                            <h3>Application Support Engineer</h3>
+                            <h3>Jan 2021 toDec 2021</h3>
+                        </div>
+                        <div class="workInfo">
+                            <h3>CSM Tech Corp India.</h3>
+                            <h3>Nizamabad, India</h3>
+                        </div>
+                        <div class="resDetail ml-5">
+                            <h4 class="m-0">• Roles and Responsibility:</h4>
+                            <div class="paraInfo ml-5">
+                                <p>- Update the content to the standard template as per the copy doc provided by the client.
+                                </p>
+                            <p>- Need to raise the ticket if any additional module needs to be added to the standard template.</p>
+                            <p>- Once the content updated to the template, verify the content as per the doc and generate the preview with client.
+                                </p>
+                            <p>- Once we get the final approval from the client, need to publish the template
+                                </p>
+                            <p>- Trained to junior tech support engineers.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h1 class="skills">Contact Section</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="contactSection">
+                        <div class="contactInfo">
+                            <h4>
+                                Contact me on
+                            </h4>
+                            <span>
+                                <i class="fa-solid fa-phone"></i> :
+                                <a href="tel:9175563489">9175563489</a>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-envelope"></i> :
+                                <a href="mailto:priyahatkar@gmail.com">priyahatkar@gmail.com</a>
+                            </span>
+                        </div>
+                        <div class="iconSection">
+                            <div class="brand-icons">
+                                <a class="social-icon" href="https://linkedin.com/in/priya-hatkar-31ab65299" target="_blank">
+                                        <img src="./../../../../assets/images/linkedin.png" width="40" alt="linkedin" title="linkedin">
+                                </a>
+                                <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" class="social-icon">
+                                        <img src="./../../../../assets/images/nokari.jpg" alt="nokari" title="nokari">
+                                </a>
+                                <a href="https://in.indeed.com/?from=gnav-homepage" target="_blank" class="social-icon">
+                                    <img src="./../../../../assets/images/indeed.png" alt="indeed" title="indeed">
+                                </a>
+                                <a href="https://www.foundit.in/user" target="_blank" class="social-icon">
+                                    <img src="./../../../../assets/images/monster.png" alt="monster" title="monster">
+                                </a>
+                                <a href="https://www.timesjobs.com/candidate/myhome.html?from=googleconnectTJ#" target="_blank" class="social-icon">
+                                    <img src="./../../../../assets/images/timesjob.png" alt="timesjob" title="timesjob">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

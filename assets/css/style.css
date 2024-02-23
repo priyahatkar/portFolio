@@ -1,0 +1,342 @@
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-size: 16px;
+    background-color: #4f755d;
+    h1{
+        font-size: 31px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .skills {
+        text-align: center;
+        margin-bottom: 45px;
+        color: #fff;
+        text-shadow: 2px 4px 3px #000;
+    }
+    .col-md-8.offset-md-2 {
+        padding: 0;
+    }
+}
+
+/* nav-section */
+
+.navbar{
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    /* // background-color: #fff !important; */
+    .navbar-brand{
+        height: 70px;
+        padding: 0;
+        margin: 0;
+        img{
+            height: 100%;
+            object-fit: cover;
+            transition: all .2s ease-in-out;
+        }
+        img:focus,
+        img:active,
+        img:hover{
+            transform: scale(1.1);
+        }
+    }
+    .social{
+        .brand-icons{
+            display: flex;
+            margin-right: 10px;
+            list-style: none;
+            .socialBrand {
+                padding: .35em 2.375em .375em 0;
+                margin: 0 10px 0 0;
+                .socialBrands {
+                    color: #000;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-weight: 500;
+                    transition: all .4s ease-in-out;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                .socialBrands:hover,
+                .socialBrands:active,
+                .socialBrands:focus{
+                    color: orangered;
+                    transform: scale(1.5);
+                    text-shadow: .5rem 1rem 2rem rgba(#000, .2);
+                    /* // text-decoration: underline; */
+                }
+                .socialBrands::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: orangered;
+                    transition: width 0.5s ease;
+                }
+                .socialBrands:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------------------- profile-section -----------------------------------*/
+
+.profileSection{
+    padding-top: 60px;
+    .infoSection{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 3px solid #ccc;
+            object-fit: cover;
+            transition: all ease-in-out .4s;
+            box-shadow: -1px 2px 10px 3px #000;
+            animation: boxShadow 3s linear infinite alternate;
+        }
+    }
+    .infoDatas{
+        text-align: center;
+        h1{
+            color: #fff;
+            text-shadow: 2px 4px 3px #000;
+            font-size: 31px;
+        }
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        span{
+            border-right: 1px solid #000;
+            height: 20px;
+        }
+        h3{
+            margin: 0 10px;
+            color: #fff;
+            text-shadow: 2px 4px 3px #000;
+        }
+    }
+    .resInfo{
+        border: 1px solid #fff;
+        padding: 15px;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 30px 0;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 1px 2px 5px 0px #000;
+        transition: all ease-in-out .4s;
+    }
+    .resInfo:active,
+    .resInfo:focus,
+    .resInfo:hover{
+        color: #4f755d;
+        background-color: #fff;
+        border: 1px solid #4f755d;
+    }
+}
+
+
+/*------------------------------- skill section -------------------------------------*/
+
+.skills-section{
+    margin: 50px 0;
+    box-shadow: 0p2px 6px 0 #000;
+    .skillSection{
+        background-color: #f2f3f7;
+        padding: 12px;
+        .skillSet{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .SkillName {
+                width: 110px;
+                margin-right: 20px;
+                font-size: 18px;
+                margin: 0;
+            }
+            .progress{
+                width: 350px;
+                height: 15px;
+                margin: 0 20px;
+                background-color: #E4E8EB;
+                background: #E4E8EB;
+            }
+        }
+    }
+    div#skillSection {
+        box-shadow: 1px 1px 8px 0px #000;
+    }
+}
+
+
+/*--------------------------- education Section ----------------------------------*/
+
+.edSection{
+    padding: 60px 0;
+    .gradDetails{
+        background-color: #e8d54a;
+        color: #000;
+        font-weight: 500;
+        height: 100%;
+        align-items: center;
+        width: 200px;
+        justify-content: center;
+        display: flex;
+    }
+    .gDetails{
+        background-color: #f2f3f7;
+        height: 100%;
+        padding: 10px 50px;
+        h3{
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+/*----------------------------- .experience section ------------------------------*/
+
+.workSection{
+    padding: 30px 0;
+    .workInfos{
+        background-color: #f2f3f7;
+        padding: 30px;
+        margin-bottom: 15px;
+        box-shadow: 0px 2px 6px 0px #000;
+        .workInfo{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            h3{
+                margin: 0;
+            }
+        }
+        .proDetail{
+            margin-top: 5px;
+            display: flex;
+            h4{
+                margin: 0 5px;
+            }
+        }
+    }
+}
+h4:not(:last-child){
+    font-weight: 500;
+}
+
+/* -------------------------- footer section ---------------------------------------*/
+
+.footer{
+    padding: 40px 0;
+    .contactSection{
+        background-color: #f2f3f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        box-shadow: 0px 2px 6px 0px #000;
+        .contactInfo {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+            span {
+                margin: 10px 0;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+        .iconSection{
+            /* margin-bottom: 40px; */
+            .brand-icons{
+                display: flex;
+                margin-right: 10px;
+                .social-icon {
+                    width: 3.5em;
+                    height: 3.5em;
+                    padding: .35em .375em .375em;
+                    border-radius: .375em;
+                    background-color: #fff;
+                    margin: 0 20px 0 0;
+                    border: 2px solid #fff;
+                    box-shadow: 0px 1px 5px 1px #000;
+                    transition: all .2s ease-in-out;
+                        img {
+                            height: 100%;
+                            max-width: 100%;
+                            vertical-align: middle;
+                    }
+                }
+                .social-icon:active,
+                .social-icon:focus,
+                .social-icon:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width:600px){
+    .col-md-3{
+        display: flex;
+    }
+    .gradDetails{
+        flex-basis: 100%;
+        padding: 40px;
+    }
+}
+@media all and (min-width:600px) and (max-width:900px){
+    .col-md-3{
+        display: flex;
+    }
+    .gradDetails{
+        flex-basis: 100%;
+        padding: 40px;
+    }
+}
+
+@keyframes boxShadow{
+    0%{
+        transform: translateY(3px) scale(.8);
+    }
+    50% {
+        transform: translateY(-3px) scale(1);
+    }
+    100% {
+        transform: translateY(-3px) scale(1.1);
+    }
+}
+
+
+
+
+@media all and (min-width:600px) and (max-width:900px){
+    .navbar{
+        width: 100%;
+    }
+    .gradDetails{
+        flex-basis: 100%;
+    }
+}
